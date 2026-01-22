@@ -26,19 +26,34 @@ This project combines NLP (Transformers), URL-based ML detection, FastAPI, and D
 
 🧠 Machine Learning Models
 
+
 1️⃣ Email Phishing Model
+
 Model: DistilBERT
+
 Task: Binary classification (phishing / legitimate)
+
 Input: Raw email text
+
 Output: Phishing probability
+
 Framework: transformers, torch
 
+
 2️⃣ URL Phishing Model
+
 Model: Random Forest
+
 Features:
+
 URL length
+
 Hostname length
+
 Special characters
+
 IP presence
+
 Domain heuristics
+
 Output: URL phishing probability
