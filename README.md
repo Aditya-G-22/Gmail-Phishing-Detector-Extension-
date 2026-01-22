@@ -1,4 +1,3 @@
-<img width="689" height="233" alt="image" src="https://github.com/user-attachments/assets/856196bc-3136-43b5-b395-7d3886e585a7" />
 📧 Gmail Phishing Detector Extension
 
 A real-time Gmail phishing detection system that analyzes email content and embedded URLs using machine learning models, and displays inline security warnings directly inside Gmail via a Chrome extension.
