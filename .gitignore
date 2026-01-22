@@ -1,0 +1,18 @@
+# Models
+*.safetensors
+*.joblib
+*.csv
+*.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Env
+.env
