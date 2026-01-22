@@ -6,21 +6,21 @@ This project combines NLP (Transformers), URL-based ML detection, FastAPI, and D
 
 🚀 Key Features
 
-🔍 Real-time Gmail scanning using DOM parsing + MutationObserver
+-->🔍 Real-time Gmail scanning using DOM parsing + MutationObserver
 
-🧠 Email phishing detection using a fine-tuned DistilBERT model
+-->🧠 Email phishing detection using a fine-tuned DistilBERT model
 
-🔗 URL phishing detection using a trained Random Forest pipeline
+-->🔗 URL phishing detection using a trained Random Forest pipeline
 
-🧩 Model fusion logic to combine email + URL risk intelligently
+-->🧩 Model fusion logic to combine email + URL risk intelligently
 
-⚠️ Inline Gmail warning banner (High Risk / Suspicious)
+-->⚠️ Inline Gmail warning banner (High Risk / Suspicious)
 
-📉 Reduced false positives with probability fusion
+-->📉 Reduced false positives with probability fusion
 
-🌐 FastAPI backend for inference
+-->🌐 FastAPI backend for inference
 
-🧪 Tested on real emails (Quora, Discord, Spotify, Google)
+-->🧪 Tested on real emails (Quora, Discord, Spotify, Google)
 
 
 
@@ -29,31 +29,31 @@ This project combines NLP (Transformers), URL-based ML detection, FastAPI, and D
 
 1️⃣ Email Phishing Model
 
-Model: DistilBERT
+-->Model: DistilBERT
 
-Task: Binary classification (phishing / legitimate)
+-->Task: Binary classification (phishing / legitimate)
 
-Input: Raw email text
+-->Input: Raw email text
 
-Output: Phishing probability
+-->Output: Phishing probability
 
-Framework: transformers, torch
+-->Framework: transformers, torch
 
 
 2️⃣ URL Phishing Model
 
-Model: Random Forest
+-->Model: Random Forest
 
-Features:
+-->Features:
 
-URL length
+-->URL length
 
-Hostname length
+-->Hostname length
 
-Special characters
+-->Special characters
 
-IP presence
+-->IP presence
 
-Domain heuristics
+-->Domain heuristics
 
-Output: URL phishing probability
+-->Output: URL phishing probability
