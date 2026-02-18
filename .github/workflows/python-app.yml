@@ -29,7 +29,7 @@ jobs:
         pip install flake8 pytest
         pip install pandas 
         pip install numpy
-        pip install skitlearn
+        pip install scikit-learn
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
