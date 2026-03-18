@@ -1,9 +1,3 @@
-# Models
-*.safetensors
-*.joblib
-*.csv
-*.json
-
 # Python
 __pycache__/
 *.pyc
@@ -16,3 +10,14 @@ __pycache__/
 
 # Env
 .env
+```
+
+I removed `*.csv`, `*.joblib`, `*.safetensors`, and `*.json` because your app needs those files to run. Specifically, your Random Forest model (`.joblib`), DistilBERT weights (`.safetensors`), model configs (`.json`), and likely `spam.csv` are all required.
+
+After editing, run:
+```
+git add .gitignore
+git add Models/
+git add spam.csv
+git commit -m "Update gitignore and add model files"
+git push origin main
