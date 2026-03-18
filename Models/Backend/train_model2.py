@@ -34,7 +34,7 @@ import json
 
 #--------Configuration--------
 
-data_path = "email_phishing_nlp_dataset.csv"
+data_path = "dastaset_phishing.csv"
 TEST_SIZE = 0.2
 RANDOM_STATE = 42
 MAX_LENGTH = 256

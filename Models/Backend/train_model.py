@@ -25,7 +25,7 @@ from sklearn.metrics import confusion_matrix
 
 #---------CONFIGURATION--------
 
-data_path = "emails.csv"
+data_path = "spam.csv"
 Test_Size = 0.2
 Random_State = 42
 threshold = 0.35
