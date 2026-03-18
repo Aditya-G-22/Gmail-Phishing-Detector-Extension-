@@ -12,7 +12,9 @@ A real-time phishing detection system that scans Gmail emails using **dual ML mo
 
 
 ## 🏗️ Architecture
+<div align = "center">
 ![](docs/images/arch-diagram.png)
+</div>
 
 ## ✨ Key Features
 
