@@ -12,35 +12,8 @@ EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-Then **create the `.dockerignore`** file:
+Open your Dockerfile, delete everything, paste only the above (no ` ``` `, no extra text), save it, and push:
 ```
-New-Item -Path .dockerignore -ItemType File
-```
-
-Paste this inside:
-```
-__pycache__
-*.pyc
-.git
-.github
-Phishing_extension
-docs
-README.md
-.gitignore
-```
-
-**One important thing** — make sure `main:app` in the CMD line matches your actual FastAPI file. If your main Python file is called something different, like `app.py` or `server.py`, adjust it accordingly. For example if it's `app.py`, change it to `"app:app"`.
-
-**Test it locally** (make sure Docker Desktop is installed and running):
-```
-docker build -t phishing-detector .
-docker run -p 8000:8000 phishing-detector
-```
-
-Then visit `http://localhost:8000/docs` in your browser — if you see the FastAPI Swagger page, it's working.
-
-After that, push it to GitHub:
-```
-git add Dockerfile .dockerignore
-git commit -m "Add Dockerfile and dockerignore"
+git add Dockerfile
+git commit -m "Fix Dockerfile"
 git push origin main
