@@ -4,20 +4,11 @@ A real-time phishing detection system that scans Gmail emails using **dual ML mo
 
 > **Why this exists:** 91% of cyberattacks begin with a phishing email. Existing spam filters miss sophisticated phishing attempts that mimic legitimate services. This extension adds a second layer of real-time protection by analyzing both email content and embedded URLs before you click.
 
-<!-- 
-🖼️ ADD YOUR SCREENSHOTS HERE
-Uncomment and replace with your actual image paths after adding screenshots.
 
-![Demo — phishing email detected](docs/images/demo-banner.png)
 
-💡 TIPS FOR GREAT SCREENSHOTS:
-1. Open Gmail with a test phishing email
-2. Show the warning banner injected by the extension
-3. Use a screen recorder (Gifox, LICEcap, ScreenToGif) for a 10-15s demo GIF
-4. Save to docs/images/ and uncomment the line above
--->
+[Demo — phishing email detected](docs/images/Animation.png)
 
----
+
 
 ## 🏗️ Architecture
 
