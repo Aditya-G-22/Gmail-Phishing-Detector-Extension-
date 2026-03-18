@@ -11,39 +11,7 @@ A real-time phishing detection system that scans Gmail emails using **dual ML mo
 
 
 ## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                      Chrome Extension                           │
-│                                                                 │
-│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐    │ 
-│  │  content.js   │──▶│ background.js │──▶ │   popup.js    │    │
-│  │  DOM parsing  │    │  API calls    │    │   UI display  │    │
-│  │  MutationObs. │    │               │    │               │    │
-│  └───────────────┘    └───────┬───────┘    └───────────────┘    │
-│                               │                                 │
-└───────────────────────────────┼─────────────────────────────────┘
-                                │ HTTP POST (email text + URLs)
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      FastAPI Backend                            │
-│                                                                 │
-│  ┌───────────────────┐        ┌───────────────────┐             │
-│  │  Email Model      │        │  URL Model        │             │
-│  │  DistilBERT       │        │  Random Forest    │             │
-│  │  (NLP analysis)   │        │  (feature-based)  │             │
-│  └─────────┬─────────┘        └─────────┬─────────┘             │
-│            │    email_prob              │   url_prob            │
-│            └──────────┬─────────────────┘                       │
-│                       ▼                                         │
-│            ┌─────────────────────┐                              │
-│            │   Fusion Engine     │                              │
-│            │   α·email + β·url   │──▶  risk_score (0.0 – 1.0)  │
-│            └─────────────────────┘                              │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
+![](docs/images/arch-diagram.png)
 
 ## ✨ Key Features
 
