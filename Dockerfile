@@ -1,12 +1,23 @@
-FROM python:3.10-slim
+name: CI/CD Pipeline
 
-WORKDIR /app
+on:
+  push:
+    branches: [main]
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
 
-COPY . .
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-EXPOSE 8000
+      - name: Build Docker image
+        run: docker build -t phishing-detector .
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+      - name: Run Docker container (smoke test)
+        run: |
+          docker run -d -p 8000:8000 --name test-container phishing-detector
+          sleep 10
+          curl -f http://localhost:8000/docs || exit 1
+          docker stop test-container
