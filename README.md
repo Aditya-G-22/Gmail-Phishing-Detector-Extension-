@@ -1,3 +1,4 @@
+<div align = "center">
 # 📧 Gmail Phishing Detector Extension
 
 A real-time phishing detection system that scans Gmail emails using **dual ML models** — NLP-based email analysis (DistilBERT) and URL threat detection (Random Forest) — fused into a single risk score, delivered through an inline Chrome extension warning banner.
@@ -180,6 +181,7 @@ Contributions are welcome! If you'd like to improve the models, extend browser s
 - 🐙 [GitHub — @Aditya-G-22](https://github.com/Aditya-G-22)
 
 ---
+</div>
 
 ## 📄 License
 
