@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type === "PREDICT_EMAIL") {
 
-        fetch("http://127.0.0.1:8001/predict/email", {
+        fetch("https://your-app-name.onrender.com/predict", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
