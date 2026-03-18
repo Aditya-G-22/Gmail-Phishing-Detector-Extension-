@@ -6,7 +6,7 @@ A real-time phishing detection system that scans Gmail emails using **dual ML mo
 
 
 
-[Demo — phishing email detected](docs/images/Animation.png)
+[Demo — phishing email detected](docs/images/Animation.gif)
 
 
 
