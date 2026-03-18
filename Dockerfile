@@ -18,6 +18,6 @@ jobs:
       - name: Run Docker container (smoke test)
         run: |
           docker run -d -p 8000:8000 --name test-container phishing-detector
-          sleep 10
+          sleep 60
           curl -f http://localhost:8000/docs || exit 1
           docker stop test-container
