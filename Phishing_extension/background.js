@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type === "PREDICT_EMAIL") {
 
-        fetch("https://your-app-name.onrender.com/predict", {
+        fetch("https://gmail-phishing-detector-extension.onrender.com/predict", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
