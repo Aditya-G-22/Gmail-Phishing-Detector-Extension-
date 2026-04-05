@@ -1,5 +1,5 @@
 
-# 📧 Gmail Phishing Detector Extension
+# Gmail Phishing Detector Extension
 
 A real-time phishing detection system that scans Gmail emails using **dual ML models** — NLP-based email analysis (DistilBERT) and URL threat detection (Random Forest) — fused into a single risk score, delivered through an inline Chrome extension warning banner.
 
@@ -11,22 +11,22 @@ A real-time phishing detection system that scans Gmail emails using **dual ML mo
 
 
 
-## 🏗️ Architecture
+## Architecture
 
 ![](docs/images/arch-diagram.png)
 
 
-## ✨ Key Features
+## Key Features
 
 - **Dual-model fusion** — Combines NLP-based email body analysis with URL threat detection into a single weighted risk score, reducing false positives compared to either model alone
 - **Real-time Gmail integration** — Uses `MutationObserver` to detect when emails are opened and triggers analysis instantly, without page reloads
-- **Inline warning banners** — Injects "⚠️ High Risk" or "⚠️ Suspicious" banners directly into Gmail's UI
+- **Inline warning banners** — Injects "High Risk" or "Suspicious" banners directly into Gmail's UI
 - **FastAPI inference backend** — Async API serving both models concurrently with low-latency responses
 - **Probability fusion logic** — Intelligent weighting that considers confidence from both models before flagging
 
 ---
 
-## 🧠 ML Models
+## ML Models
 
 ### 1. Email Phishing Model (NLP)
 
@@ -58,7 +58,7 @@ Weights `α` and `β` are tuned to minimize false positives while maintaining hi
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Gmail-Phishing-Detector-Extension-/
@@ -81,7 +81,7 @@ Gmail-Phishing-Detector-Extension-/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 |---|---|
@@ -93,7 +93,7 @@ Gmail-Phishing-Detector-Extension-/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -128,19 +128,19 @@ The API will be available at `http://localhost:8000`. You can test it at `http:/
 
 ---
 
-## 🧪 Tested Against
+## Tested Against
 
 | Email Source | Type | Result |
 |---|---|---|
-| Quora | Legitimate | ✅ Correctly passed |
-| Discord | Legitimate | ✅ Correctly passed |
-| Spotify | Legitimate | ✅ Correctly passed |
-| Google | Legitimate | ✅ Correctly passed |
-| Simulated phishing | Malicious | 🚨 Correctly flagged |
+| Quora | Legitimate | Correctly passed |
+| Discord | Legitimate | Correctly passed |
+| Spotify | Legitimate | Correctly passed |
+| Google | Legitimate | Correctly passed |
+| Simulated phishing | Malicious | Correctly flagged |
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Link hover previews showing per-URL risk scores
 - [ ] Extend support to Outlook Web and Yahoo Mail
@@ -151,7 +151,7 @@ The API will be available at `http://localhost:8000`. You can test it at `http:/
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 Building this project taught me how to bring an ML model from training to production in a real-world context:
 
@@ -164,7 +164,7 @@ Building this project taught me how to bring an ML model from training to produc
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! If you'd like to improve the models, extend browser support, or fix bugs:
 
@@ -176,15 +176,15 @@ Contributions are welcome! If you'd like to improve the models, extend browser s
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Aditya Garg**
-- 📧 adityagarg535@gmail.com
-- 🐙 [GitHub — @Aditya-G-22](https://github.com/Aditya-G-22)
+- adityagarg535@gmail.com
+- [GitHub — @Aditya-G-22](https://github.com/Aditya-G-22)
 
 ---
 
 
-## 📄 License
+## License
 
 This project is open source under the [MIT License](LICENSE).
